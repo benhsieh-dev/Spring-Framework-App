@@ -17,9 +17,9 @@ public class DispatcherServlet extends AbstractAnnotationConfigDispatcherServlet
 	}
 
 	@Override
-	protected String[] getServletMappings() {
-		// TODO Auto-generated method stub
-		return null;
+	protected String[] getServletMappings() {		
+		String[] mappings = {"/", "tiktok.com"};
+		return mappings;
 	}
 
 }
