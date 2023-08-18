@@ -12,8 +12,8 @@ public class DispatcherServlet extends AbstractAnnotationConfigDispatcherServlet
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		// TODO Auto-generated method stub
-		return null;
+		Class[] configFiles = {TikTokAppConfig.class};
+		return configFiles;
 	}
 
 	@Override
