@@ -2,7 +2,7 @@ package com.socialmedia.tiktok.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class DispatcherServlet extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class UserAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -12,14 +12,14 @@ public class DispatcherServlet extends AbstractAnnotationConfigDispatcherServlet
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		Class[] configFiles = {TikTokAppConfig.class};
-		return configFiles;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
-	protected String[] getServletMappings() {		
-		String[] mappings = {"/", "tiktok.com"};
-		return mappings;
+	protected String[] getServletMappings() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
