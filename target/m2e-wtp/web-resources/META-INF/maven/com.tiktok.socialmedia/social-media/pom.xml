@@ -24,14 +24,14 @@
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-webmvc</artifactId>
-    <version>6.0.9</version>
+    <version>5.2.11.RELEASE</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-jdbc</artifactId>
-    <version>6.0.9</version>
+    <version>5.2.11.RELEASE</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
