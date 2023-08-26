@@ -15,7 +15,7 @@ public class TikTokAppConfig {
 	public InternalResourceViewResolver viewResolver() {
 		
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-		viewResolver.setPrefix("/WEB-INF/view");
+		viewResolver.setPrefix("/WEB-INF/view/");
 		viewResolver.setSuffix(".jsp");
 		
 		return viewResolver; 

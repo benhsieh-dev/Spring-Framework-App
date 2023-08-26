@@ -12,14 +12,14 @@ public class UserAppInitializer extends AbstractAnnotationConfigDispatcherServle
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		// TODO Auto-generated method stub
-		return null;
+		Class[] configFiles = {TikTokAppConfig.class};
+		return configFiles;
 	}
 
 	@Override
 	protected String[] getServletMappings() {
-		// TODO Auto-generated method stub
-		return null;
+		String[] mappings = {"/", "/tiktok.com"};
+		return mappings;
 	}
 
 }
