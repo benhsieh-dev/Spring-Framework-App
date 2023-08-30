@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1 align="center">TikTok</h1>
 	<i>User data coming soon...</i>
 
 </body>
