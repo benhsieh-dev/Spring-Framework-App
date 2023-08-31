@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1 align="center">TikTok</h1>
-	<i>User data coming soon...</i>
+	<i>Video clips coming soon...</i>
 
 </body>
 </html>

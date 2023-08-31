@@ -2,7 +2,7 @@ package com.socialmedia.tiktok.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class UserAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class VideoAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
