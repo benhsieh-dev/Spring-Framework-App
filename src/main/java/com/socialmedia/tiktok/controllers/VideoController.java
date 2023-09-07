@@ -2,6 +2,7 @@ package com.socialmedia.tiktok.controllers;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -12,12 +13,13 @@ import com.socialmedia.tiktok.api.Video;
 @Controller
 public class VideoController {
 	
-	VideoDAO videoDAO = new VideoDAOImpl(); 
+	@Autowired
+	private VideoDAO videoDAO; 
 			
 	@GetMapping("/showVideo")
 	public String showVideoList() {
 		
-		List<Video> loadVideos = videoDAO.loadVideos(); 
+		List<Video> videoList = videoDAO.loadVideos(); 
 		return "video-list";
 	}
 
