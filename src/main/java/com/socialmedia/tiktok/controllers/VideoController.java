@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.socialmedia.tiktok.DAO.VideoDAO;
@@ -17,9 +18,11 @@ public class VideoController {
 	private VideoDAO videoDAO; 
 			
 	@GetMapping("/showVideo")
-	public String showVideoList() {
+	public String showVideoList(Model model) {
 		
 		List<Video> videoList = videoDAO.loadVideos(); 
+		model.addAttribute("videos", videoList); 
+		
 		return "video-list";
 	}
 
