@@ -5,6 +5,7 @@ public class Video {
 	private int id; 
 	private String title;
 	private String username;
+	private String url; 
 	private String country;
 	
 	public int getId() {
@@ -19,6 +20,12 @@ public class Video {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	} 
 	public String getUsername() {
 		return username;
 	}
@@ -30,8 +37,6 @@ public class Video {
 	}
 	public void setCountry(String country) {
 		this.country = country;
-	} 
-	
-	
+	}
 
 }
