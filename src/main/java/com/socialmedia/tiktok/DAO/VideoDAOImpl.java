@@ -15,11 +15,13 @@ public class VideoDAOImpl implements VideoDAO {
 
 	@Override
 	public List<Video> loadVideos() {
-		List<Video> videoList = new ArrayList<Video>(); 
 		
 		String sql = "SELECT * FROM videos"; 
 		
-		jdbcTemplate.query(sql, new VideoRowMapper()); 
+		List<Video> theListOfVideo = jdbcTemplate.query(sql, new VideoRowMapper()); 
+		
+		return theListOfVideo; 
+		
 	}
 
 }
