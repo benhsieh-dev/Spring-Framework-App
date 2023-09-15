@@ -21,6 +21,9 @@ public class VideoController {
 	public String showVideoList(Model model) {
 		
 		List<Video> videoList = videoDAO.loadVideos(); 
+		
+		for (Video tempVideo : videoList) System.out.println(tempVideo);
+		
 		model.addAttribute("videos", videoList); 
 		
 		return "video-list";
