@@ -26,13 +26,14 @@ public class TikTokAppConfig {
 	}
 	
 	@Bean
-	JdbcTemplate jdbcTemplate() {
-		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+	public JdbcTemplate jdbcTemplate() {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource());
 		
 		return jdbcTemplate; 
 	}
 	
-	DataSource dataSource() {
+	@Bean
+	public DataSource dataSource() {
 		
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		

@@ -13,9 +13,8 @@ import com.socialmedia.tiktok.rowmapper.VideoRowMapper;
 public class VideoDAOImpl implements VideoDAO {
 	
 	@Autowired
-	JdbcTemplate jdbcTemplate; 
+	private JdbcTemplate jdbcTemplate; 
 
-	@Override
 	public List<Video> loadVideos() {
 		
 		String sql = "SELECT * FROM videos"; 
