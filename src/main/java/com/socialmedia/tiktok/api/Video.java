@@ -38,5 +38,12 @@ public class Video {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	@Override
+	public String toString() {
+		return "Video [id=" + id + ", title=" + title + ", username=" + username + ", url=" + url + ", country="
+				+ country + "]";
+	}
+	
+	
 
 }
