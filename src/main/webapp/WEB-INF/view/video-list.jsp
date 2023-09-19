@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +9,7 @@
 <body>
 	<h1 align="center">TikTok</h1>
 	<i>Video clips coming soon...</i>
+	${videos}
 
 </body>
 </html>
