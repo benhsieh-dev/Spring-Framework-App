@@ -9,8 +9,11 @@
 </head>
 <body>
 	<h1 align="center">TikTok</h1>
-	<i>Video clips coming soon...</i>
-	${videos}
+	
+	<c:forEach var="video" items="${videos}">
+		${video}
+	</c:forEach>
+	
 
 </body>
 </html>
