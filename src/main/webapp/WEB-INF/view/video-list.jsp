@@ -12,6 +12,7 @@
 	
 	<c:forEach var="video" items="${videos}">
 		${video}
+		<br />
 	</c:forEach>
 	
 
