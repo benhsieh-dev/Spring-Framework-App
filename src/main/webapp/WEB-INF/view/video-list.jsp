@@ -11,8 +11,21 @@
 	<h1 align="center">TikTok</h1>
 	
 	<c:forEach var="video" items="${videos}">
-		${video}
+		<h3>id</h3>
+		${video.id}
 		<br />
+		<h3>Url</h3>
+		${video.url}
+		<br />
+		<h3>Username</h3>
+		${video.username}
+		<br />
+		<h3>Title</h3>
+		${video.title}
+		<br />
+		<h3>Country</h3>
+		${video.country}
+		
 	</c:forEach>
 	
 
