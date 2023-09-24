@@ -10,23 +10,39 @@
 <body>
 	<h1 align="center">TikTok</h1>
 	
-	<c:forEach var="video" items="${videos}">
-		<h3>id</h3>
-		${video.id}
-		<br />
-		<h3>Url</h3>
-		${video.url}
-		<br />
-		<h3>Username</h3>
-		${video.username}
-		<br />
-		<h3>Title</h3>
-		${video.title}
-		<br />
-		<h3>Country</h3>
-		${video.country}
+	<table border="1">
+		<thead>
+			<tr>
+				<td>ID</td>
+				<td>Url</td>
+				<td>Username</td>
+				<td>Title</td>
+				<td>Country</td>		
+			</tr>	
+		</thead>	
 		
-	</c:forEach>
+		<c:forEach var="video" items="${videos}">
+			<tr>
+				<td>
+					${video.id}
+				</td>
+				<td>
+					${video.url}
+				</td>
+				<td>
+					${video.username}
+				</td>
+				<td>
+					${video.title}
+				</td>
+				<td>
+					${video.country}	
+				</td>		
+			</tr>
+		</c:forEach>
+		
+	</table>
+	
 	
 
 </body>
